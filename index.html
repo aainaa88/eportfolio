@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My ePortfolio</title>
+  <link id="themeStylesheet" rel="stylesheet" href="css/theme1.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My ePortfolio</h1>
+    <button onclick="toggleTheme()">Switch Theme</button>
+  </header>
+
+  <main>
+    <section class="profile">
+      <img src="image/profile.png" alt="Profile Photo" class="profile-pic" />
+      <h2>About</h2>
+        <p class="justified-text">Hello! I'm Aainaa Aqilah, an IT Executive with over 9 years of experience specializing in web development, IT support, and digital solutions. Currently pursuing my Master’s in IT Management at UNIMAS, I am passionate about website development, graphic design and video editing.<br><br>
+
+This portfolio showcases my expertise, projects, and achievements in system administration, digital transformation, and technical training. Whether you're here to explore my work or collaborate on new ideas, I invite you to browse through my portfolio and connect with me.<br><br>
+
+🚀 Let’s innovate and create impactful digital solutions together!</p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Responsive Website</li>
+        <li>Interactive Form</li>
+        <li>Portfolio Gallery</li>
+      </ul>
+		
+		<section class="goto-gallery">
+  <h2>Want to see more?</h2>
+  <p>Check out my photo gallery from a recent project event!</p>
+  <a href="gallery.html">
+    <button>View Photo Gallery</button>
+  </a>
+</section>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aainaa Aqilah</p>
+  </footer>
+
+  <script>
+    let currentTheme = 'theme1';
+    function toggleTheme() {
+      const link = document.getElementById('themeStylesheet');
+      currentTheme = currentTheme === 'theme1' ? 'theme2' : 'theme1';
+      link.href = 'css/' + currentTheme + '.css';
+    }
+  </script>
+</body>
+</html>

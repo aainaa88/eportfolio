@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Gallery - My ePortfolio</title>
+  <link id="themeStylesheet" rel="stylesheet" href="css/theme1.css" />
+</head>
+<body>
+  <header>
+    <h1>My Photo Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+    <button onclick="toggleTheme()">Switch Theme</button>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <h2>Beyond the Code: My Interests & Inspirations</h2>
+      <p>While coding is my passion, I find inspiration and creativity through other interests that fuel my problem-solving mindset and design thinking. Here’s a glimpse into some things I enjoy doing when I’m not behind the screen.</p>
+
+      <!-- Image Gallery -->
+      <div class="photo-grid">
+        <img src="image/event1.jpg" alt="Booth setup" />
+        <img src="image/event2.jpg" alt="Explaining project" />
+        <img src="image/event3.jpg" alt="Audience interaction" />
+      </div>
+
+      <!-- Audio -->
+      <section>
+  <h3>Event Recap (Audio)</h3>
+  <audio controls autoplay>
+    <source src="image/recap.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+      <!-- Video -->
+      <section>
+        <h3>My Latest Video Editing for Launching of Gawai 2024 Coffee Table Book</h3>
+        <video controls width="100%">
+          <source src="image/demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- Animation -->
+      <section>
+        
+        <div class="animated-box">Thanks for visiting!</div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aainaa Aqilah</p>
+  </footer>
+
+  <script>
+    let currentTheme = 'theme1';
+    function toggleTheme() {
+      const link = document.getElementById('themeStylesheet');
+      currentTheme = currentTheme === 'theme1' ? 'theme2' : 'theme1';
+      link.href = 'css/' + currentTheme + '.css';
+    }
+  </script>
+</body>
+</html>
